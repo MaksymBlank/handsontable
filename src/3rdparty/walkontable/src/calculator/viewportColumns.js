@@ -202,7 +202,7 @@ class ViewportColumnsCalculator {
       const columnWidth = this._getColumnWidth(totalColumns - 1);
       const lastColumnWidth = remainingSize + columnWidth;
 
-      this.stretchLastWidth = lastColumnWidth >= 0 ? lastColumnWidth : columnWidth;
+      this.stretchLastWidth = lastColumnWidth >= 80 ? lastColumnWidth : columnWidth;
     }
   }
 
